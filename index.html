@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div>
+        </div>
+        <div class="container">
+            <div class="column">
+                <div class="head">
+                    <h2>Social media  хэрэглэгчдийн судалгаа</h2>
+                    <p>Судалгаанд оролцсон таньд баярлалаа</p>
+                </div>
+                <br>
+                <div class="light">
+
+                    <form action="">
+                        <fieldset class="field">
+                            <legend>Ерөнхий мэдээлэл </legend>
+                            <div class="column">
+                                <label for="ner">Нэр</label>
+                                <input type="text" name="ner" id="ner" required>
+                                <input type="submit" name="submit" hidden>
+                            </div>
+                            <br>
+                            <div class="column">
+                                <label for="email">И-мэйл</label>
+                                <input type="email" name="email" id="email" required>
+                                <input type="submit" name="submit" hidden>
+                            </div>
+                            <br>
+                            <div class="column">
+                                <label for="nas">нас</label>
+                                <input type="number" name="nas" id="nas" min="14" max="99" required>
+                                <input type="submit" name="submit" hidden>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form action="">
+                        <fieldset class="field">
+                            <legend>Social media</legend>
+                            <div class="row">
+                                <label for="hour">Та өдөрт хэдэн цаг ашигладаг вэ </label>
+                            </div>
+                            <div class="column">
+                                <select name="hour" id="hour">
+                                    <option value="two">1-2 цаг</option>
+                                    <option value="three">2-3 цаг</option>
+                                    <option value="fourmore">4 болон түүнээс дээш</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <p>Та онлайнаар худалдан авалт хийх, дэлгүүрээс худалдан авалт хийх альныг нь илүүд үздэг вэ ?
+                                    
+                                </p>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <input type="radio" id="online" name="online" value="online">
+                                <label for="online">Онлайн худалдан авалт</label>
+                            </div>
+                            <div class="row">
+                                
+                                <input type="radio" id="market" name="market" value="market">
+                                <label for="market">Дэлгүүр орж худалдан авалт хийх</label>
+                            </div>
+                            <br>
+                            <div class="column">
+                                <p>Та ямар social media platform ашигладаг вэ ?</p>
+                                <div>
+                                    <input type="checkbox" id="fb" name="fb" value="fb">
+                                    <label for="fb">Facebook</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="ig" name="ig" value="ig">
+                                    <label for="ig">Instagram</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="twt" name="twt" value="twt">
+                                    <label for="twt">Twitter</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="red" name="red" value="red">
+                                    <label for="red">Reddit</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="snap" name="snap" value="snap">
+                                    <label for="snap">Snapchat</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="quora" name="quora" value="quora">
+                                    <label for="quora">Quora</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="utube" name="utube" value="utube">
+                                    <label for="utube">Youtube</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="other" name="other" value="other">
+                                    <label for="other">Бусад</label>
+                                </div>
+                            </div>    
+                        </fieldset>
+                        <div class="">
+                            <label for="request">Санал хүсэлт</label>
+                        </div>
+                        <div class="column">
+                            <textarea name="request" id="request" rows="5" maxlength="300" placeholder="Та санал хүсэлтээ энд бичнэ үү... "></textarea>
+                        </div>
+                        <div class="column">
+                            <input type="submit" id="send" value="Илгээх">
+                        </div>
+                    </form>
+                </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
